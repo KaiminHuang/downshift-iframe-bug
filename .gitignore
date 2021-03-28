@@ -1,0 +1,12 @@
+# Ignore bundler config
+/.bundle
+/vendor/bundle
+
+# Ignore all logfiles and tempfiles
+/log/*.log
+/log/*.log.json
+npm-debug.log
+yarn-error.log
+
+node_modules
+public/
