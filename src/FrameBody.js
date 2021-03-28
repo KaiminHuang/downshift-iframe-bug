@@ -9,7 +9,7 @@ import { StyleManager } from "./StyleManager";
 import { AutoComplete } from "./AutoComplete";
 import { GardenDropdown } from "./GardenDropdown";
 
-export const FrameBody = () => {
+const FrameBody = () => {
   const { window: iframeWindow } = useContext(FrameContext);
 
   return (
@@ -35,12 +35,4 @@ export const FrameBody = () => {
   );
 };
 
-export default function App() {
-  return (
-    <div className="App">
-      <h1>Core app</h1>
-      <div id={PORTAL_ROOT_ID} />
-      Here is the Core app
-    </div>
-  );
-}
+export default FrameBody
