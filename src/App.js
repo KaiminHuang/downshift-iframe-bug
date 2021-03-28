@@ -1,13 +1,11 @@
 import React, { useContext } from "react";
 import Frame, { FrameContext } from "react-frame-component";
 
-import { DrawerModal } from "@zendeskgarden/react-modals";
-
 import { PORTAL_ROOT_ID } from "./constant";
-import { Portal } from "./Portal";
-import { StyleManager } from "./StyleManager";
-import { AutoComplete } from "./AutoComplete";
-import { GardenDropdown } from "./GardenDropdown";
+import { Portal } from "./components/Portal";
+import { StyleManager } from "./components/StyleManager";
+import { AutoComplete } from "./components/AutoComplete";
+import { GardenDropdown } from "./components/GardenDropdown";
 
 const FrameBody = () => {
   const { window: iframeWindow } = useContext(FrameContext);
